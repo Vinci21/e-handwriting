@@ -14,14 +14,13 @@
                     minimum-scale = 1.0,
                     maximum-scale = 1.0,
                     user-scalable = no"/>
-
-
 </head>
-
 <body>
-
-<p style="text-align: right">
-<select name="selLinea" id="selLinea" padding-right: 4cm; onchange="selLinea(this.value)"> 
+<!--p style="text-align: left"-->
+<div class="button10">
+<input type="button" class="button button10"  style="text-align: left" id="limpie" value="Clear" onClick="limpie()"/>
+<input type="button" class="button button10"  style="text-align: left" id="borrar" value="erase" onClick="cClear()"/>
+<select name="selLinea" id="selLinea" class="ddmenu" padding-right: 4cm; onchange="selLinea(this.value)"> 
     <option value=1>Linea:  1</option>
     <option value=2>Linea:  2</option>
     <option value=3>Linea:  3</option>
@@ -38,23 +37,30 @@
     <option value=18>Linea: 18</option>
     <option value=20>Linea: 20</option>
   </select>
-<input type="button" class="button button10"  style="text-align: left" id="guardar" value="guardar" onClick="guarde()"/>
-<input type="button" class="button button10"  style="text-align: left" id="limpie" value="limpie" onClick="limpie()"/>
-<input type="button" class="button button10"  style="text-align: left" id="borrar" value="borrar" onClick="cClear()"/>
-</p>
 
+  </div>
 
-<p style="text-align: center"  >
-<input type="button" class="button button1" Id="red" display: inline-block onClick="cColor('red')"/>
-<input type="button" class="button button2" Id="blue" display: inline-block onClick="cColor('blue')"/>
-<input type="button" class="button button3"  Id="green"  display: inline-block onClick="cColor('green')"/>
-<input type="button" class="button button4"  Id="amarillo"  display: inline-block onClick="cColor('yellow')"/>
+  <div class="button" 
+<input type="button" class="button button1" Id="red" onClick="cColor('red')"/>
+<input type="button" class="button button2" Id="blue"  onClick="cColor('blue')"/>
+<input type="button" class="button button3"  Id="green"  onClick="cColor('green')"/>
+<input type="button" class="button button4"  Id="amarillo"  onClick="cColor('yellow')"/>
 <input type="button" class="button button7"  Id="fuchsia"  onClick="cColor('fuchsia')"/>
 <input type="button" class="button button8"  Id="lime"  onClick="cColor('lime')"/>
 <input type="button" class="button button5"  Id="negro" onClick="cColor('black')"/>
 <input type="button" class="button button6" Id="blanco" onClick="cColor('white')"/>
-</p>
-<p font-size: 3 style="text-align: left">Toma y escribe...</p>
+</div>
+
+<div class="mytitle"; style="text-align: right;"  >
+<b type="mytitle" class="mytitle"; style="text-align: right;"> MyNotes </p>
+</div>
+ 
+  
+
+
+
+
+
 <canvas style="border:1px solid black;"  id="MisNotas"></canvas>
 	<script src="myNotes.js"></script>
 

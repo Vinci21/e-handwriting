@@ -7,14 +7,14 @@
 	.button {
    	 border: none;
    	 color: black;
-  	  padding: 16px 32px;
+  	  padding: 16px 30px;
    	 text-align: center;
    	 text-decoration: none;
    	 display: inline-block;
-   	 font-size: 16px;
+   	 font-size: 14px;
    	 margin: 2px 1px;
    	 cursor: pointer;
-                box-shadow: 0 9px #999;
+     box-shadow: 0 9px #999;
 	}
 
 .button:hover{
@@ -28,5 +28,33 @@
 	.button6 {background-color: white; border-radius: 50%;}
 	.button7 {background-color: fuchsia; border-radius: 50%;}
 	.button8 {background-color: lime; border-radius: 50%;}
-	.button10 {font-size: 20px;background-color: gainsboro; border-radius: 15%;}
+
+.button10 {
+	font-size: 12px;
+	background-color: gainsboro;
+	border-radius: 20%;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: left;
+
+}
+
+.ddmenu{
+   font-size: 12px;
+	background-color: gainsboro;
+	border-radius: 10%;
+	display: inline-block;
+	padding: 10px 18px;
+	text-align: left;
+
+}
+.mytitle{
+	display: inline-block;
+	text-align: right;
+	font-size: 25;
+	font-family: cursive;
+	font-style: 15px arial, sans-serif; 
+	font-width: bold;
+	display: inline-block;
+}
 
