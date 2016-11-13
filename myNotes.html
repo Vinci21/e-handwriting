@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi Cuaderno de notas</title>
+
+<!--script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script-->
+
+	<link rel="stylesheet" href="myNotes.css" type="text/css">
+	<meta name="viewport" 
+		  content="height=device-height,
+		  			width = device-width,
+		  			initial-scale = 1.0,
+                    minimum-scale = 1.0,
+                    maximum-scale = 1.0,
+                    user-scalable = no"/>
+
+
+</head>
+
+<body>
+
+<p style="text-align: right">
+<select name="selLinea" id="selLinea" padding-right: 4cm; onchange="selLinea(this.value)"> 
+    <option value=1>Linea:  1</option>
+    <option value=2>Linea:  2</option>
+    <option value=3>Linea:  3</option>
+    <option value=4>Linea:  4</option>
+    <option value=5>Linea:  5</option>
+    <option value=6>Linea:  6</option>
+    <option value=7>Linea:  7</option>
+    <option value=8>Linea:  8</option>
+    <option value=9>Linea:  9</option>
+    <option value=10>Linea: 10</option>
+    <option value=12>Linea: 12</option>
+    <option value=14>Linea: 14</option>
+    <option value=16>Linea: 16</option>
+    <option value=18>Linea: 18</option>
+    <option value=20>Linea: 20</option>
+  </select>
+<input type="button" class="button button10"  style="text-align: left" id="guardar" value="guardar" onClick="guarde()"/>
+<input type="button" class="button button10"  style="text-align: left" id="limpie" value="limpie" onClick="limpie()"/>
+<input type="button" class="button button10"  style="text-align: left" id="borrar" value="borrar" onClick="cClear()"/>
+</p>
+
+
+<p style="text-align: center"  >
+<input type="button" class="button button1" Id="red" display: inline-block onClick="cColor('red')"/>
+<input type="button" class="button button2" Id="blue" display: inline-block onClick="cColor('blue')"/>
+<input type="button" class="button button3"  Id="green"  display: inline-block onClick="cColor('green')"/>
+<input type="button" class="button button4"  Id="amarillo"  display: inline-block onClick="cColor('yellow')"/>
+<input type="button" class="button button7"  Id="fuchsia"  onClick="cColor('fuchsia')"/>
+<input type="button" class="button button8"  Id="lime"  onClick="cColor('lime')"/>
+<input type="button" class="button button5"  Id="negro" onClick="cColor('black')"/>
+<input type="button" class="button button6" Id="blanco" onClick="cColor('white')"/>
+</p>
+<p font-size: 3 style="text-align: left">Toma y escribe...</p>
+<canvas style="border:1px solid black;"  id="MisNotas"></canvas>
+	<script src="myNotes.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+#canvas{
+	display:block;
+    margin:0 auto;
+    overflow: scroll;
+}
+	.button {
+   	 border: none;
+   	 color: black;
+  	  padding: 16px 32px;
+   	 text-align: center;
+   	 text-decoration: none;
+   	 display: inline-block;
+   	 font-size: 16px;
+   	 margin: 2px 1px;
+   	 cursor: pointer;
+                box-shadow: 0 9px #999;
+	}
+
+.button:hover{
+	background-color: #def;
+}
+	.button1 {background-color: red; border-radius: 50%;}
+	.button2 {background-color: blue; border-radius: 50%;}
+	.button3 {background-color: green; border-radius: 50%;}
+	.button4 {background-color: yellow; border-radius: 50%;}
+	.button5 {color:white; background-color: black; border-radius: 50%;}
+	.button6 {background-color: white; border-radius: 50%;}
+	.button7 {background-color: fuchsia; border-radius: 50%;}
+	.button8 {background-color: lime; border-radius: 50%;}
+	.button10 {font-size: 20px;background-color: gainsboro; border-radius: 15%;}
+
